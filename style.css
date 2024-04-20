@@ -1,0 +1,1459 @@
+*
+{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, Tahoma, Verdana,  sans-serif;
+}
+html
+{
+	overflow-x: hidden;
+}
+body
+{
+	background-color: #FFF9FB;
+}
+/*header*/
+header
+{
+	background-color: #FFF6F9;
+	color: #2E1D14;
+	padding: 40px;
+	font-size: 22px;
+}
+#initial
+{
+	color: #FF5800;
+	font-size: 80px;
+}
+.newsletter
+{
+	box-sizing: border-box;
+	padding: 6px 28px 6px 28px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 40px;
+	background-color: #2E1D14 ;
+	color: #FEFDF9 ;
+	font-size: 18px;
+}
+.newslettertext 
+{
+	text-decoration: none;
+	color: #FEFDF9;
+	letter-spacing: 1px;
+}
+.newsletter:hover
+{
+	color: #FF5800;
+	font-weight: bold;
+}
+/*PopUp*/
+#popup 
+{
+	position: absolute;
+	background: #FEFDF9;
+	top: 0%;
+	left: 32%;
+	width: 35%;
+	border: 2px solid #2E1D14;
+	display: none;
+	z-index: 4;
+}
+.popupform
+{
+	padding: 20px;
+}
+.popupform p 
+{
+	font-size: 22px;
+	color: #2E1D14 ;
+	line-height: 42px;
+}
+.popupform input[type="text"]
+{
+	padding: 8px;
+	width: 70%;
+}
+.popupform input[type="submit"] 
+{
+	padding: 8px 18px;
+	margin-top: 10px;
+	width: 50%;
+	text-align: center;
+	background-color: #2E1D14;
+	color: #FEFDF9;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+.popupform input[type="submit"]:hover
+{
+	color: #FF5800;
+	font-weight: bold;
+}
+/*nav*/
+nav
+{
+	display: inline-flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	padding: 4px;
+	width: 100%;
+	background-color: #2E1D14;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	opacity: 0.9;
+}
+nav ul 
+{
+	list-style: none;
+	overflow: auto;
+	margin: 0;
+}
+nav li 
+{
+	float: left;
+	padding: 18px;
+}
+nav li a 
+{
+	text-decoration: none;
+	color: #E0DBD5;
+	font-size: 18px;
+}
+nav li a:hover 
+{
+	color: #FF5800;
+	font-weight: bold;
+}
+.border 
+{
+	color: #FF5800;
+	font-weight: bold;
+}
+/*footer*/
+footer 
+{
+	padding: 8px;
+	bottom: 0px;
+	width: 100%;
+	position: relative;
+	background-color: #2E1D14;
+	color: #FEFDF9;
+	margin-top: 20px;
+	clear: both;
+	opacity: 0.9;
+}
+.footercontent
+{
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-left: 500px;
+}
+#icon 
+{
+	float: left;
+	margin-right: 12px;
+}
+.iconimg
+{
+	width: 30px;
+	height: 30px;
+}
+.twittericon
+{
+	width: 26px;
+	height: 22px;
+	margin-bottom: 4px;
+}
+footer a 
+{
+	text-decoration: none;
+}
+footer p 
+{
+	padding: 8px;
+}
+/*HomePage*/
+/*slideshow*/
+.slideshow
+{
+	width: 100%;
+	height: 400px;
+	background-image: url("images/slideshow.jpg");
+	background-size: 100% 100%;
+	animation: animatedslide 20s linear infinite;
+}
+@keyframes animatedslide{
+	0%{
+		background-image: url("images/slideshow1.jpg");
+	}
+	25%{
+		background-image: url("images/car4.jpeg");
+	}
+	50%{
+		background-image: url("images/slideshow2.jpeg");
+	}
+	75%{
+		background-image: url("images/slideshow.jpg");
+	}
+	100%{
+		background-image: url("images/slideshow1.jpg");
+	}
+}
+.motherintro
+{
+	width: 100%;
+	height: 900px;
+}
+.intro
+{
+	float: left;
+	width: 40%;
+	margin-left: 40px;
+	padding: 60px;
+}
+.homeimg
+{
+	width: 100%;
+	margin-left: 80px;
+	box-shadow: 50px 50px #E0DBD5;
+	width: 450px;
+	height: 380px;
+}
+.introtext
+{
+	padding: 70px;
+	margin-left: 60px;
+	color: #2E1D14;
+}
+.introtext h3
+{
+	font-size: 24px;
+}
+.introtext p 
+{
+	font-size: 20px;
+	padding: 8px;
+	text-align: justify;
+	color: #2E1D14;
+}
+.countriestext
+{
+	padding: 60px;
+	text-align: center;
+}
+.countriestext p 
+{
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	color: #2E1D14;
+	margin-top: 10px;
+	word-spacing: 3px;
+}
+.countriestext h2 
+{
+	text-decoration: underline solid #FF5800;
+	color: #2E1D14;
+	letter-spacing: 4px;
+}
+.countries
+{
+	width: 100%;
+	padding: 30px;
+	height: 400px;
+	margin-left: 40px;
+}
+.flag
+{
+	float: left;
+	width: 20%;
+	padding: 5px;
+}
+.flag img
+{
+	border: 1px solid transparent;
+	border-radius: 50%;
+	box-shadow: 20px 0px #E0DBD5 ;
+	width: 150px;
+	height: 150px;
+}
+.flag p 
+{
+	padding: 20px;
+	color: #2E1D14;
+	letter-spacing: 4px;
+	text-align: justify;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.homeaudio
+{
+	width: 70px;
+	height: 40px;
+	margin-top: 50px;
+}
+.homevideo
+{
+	padding: 40px;
+	min-height: 550px;
+	margin-top: 50px;
+}
+.homevideo video
+{
+	width: 60%;
+	float: left;
+	height: auto;
+	padding: 40px;
+}
+.homevideo h3 
+{
+	width: 40%;
+	float: left;
+	font-size: 20px;
+	color: #2E1D14;
+	padding: 10px;
+	margin-top: 370px;
+}
+
+/*Contact*/
+.contact 
+{
+	padding: 0px;
+	height: 200px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.contactinfo
+{
+	padding: 20px;
+	float: left;
+	width: 33.3%;
+}
+.contactinfo h3
+{
+	letter-spacing: 3px;
+	font-size: 28px;
+	color: #2E1D14;
+	text-align: justify;
+}
+.contactinfo p 
+{
+	font-size: 20px;
+	text-align: justify;
+	color: #2E1D14;
+	padding: 12px;
+	font-weight: bold;
+}
+.form 
+{
+	padding: 20px;
+	margin-left: 100px;
+	margin-top: 50px;
+	min-height: 800px;
+}
+.form p 
+{
+	font-size: 22px;
+	text-align: justify;
+	color: #2E1D14;
+	padding: 12px;
+	font-weight: bold;
+}
+.forminfo h2
+{
+	font-size: 28px;
+	text-align: justify;
+	color: #2E1D14;
+	font-weight: bold;
+	padding: 20px;
+}
+.forminfo  
+{	
+	padding: 40px;
+	width: 50%;
+	float: left;
+	color: #2E1D14;
+	height: 600px;
+	background-color: gray;
+	background-image: url(images/contactinfo1.jpg);
+	background-position: center top;
+	background-size: 600px 600px;
+	background-blend-mode: screen;
+	border: 1px solid transparent;
+}
+.forminfo p 
+{
+	line-height: 29px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.forminfo input[type="text"], .forminfo input[type="email"]
+{
+	width: 80%;
+	color: #2E1D14;
+	line-height: 29px;
+	margin-left: 20px;
+}
+.forminfo select
+{	
+	width: 80%;
+	line-height: 29px;
+	margin-left: 20px;
+	height: 34px;
+}
+.forminfo input[type="submit"]
+{
+	width: 30%;
+	padding: 10px;
+	margin-top: 25px;
+	margin-left: 20px;
+	background-color: #2E1D14;
+	color: #FEFDF9;
+	border: 1px solid transparent;
+	font-size: 18px;
+}
+.forminfo input[type="submit"]:hover
+{
+	color: #FF5800;
+	font-weight: bold;
+}
+.contactimg
+{
+	width: 50%;
+	float: right;
+	padding: 40px;
+	margin-top: 15px;
+}
+.contactimg img 
+{
+	float: right;
+	margin-right: 35px;
+	width: 400px;
+	height: 480px;
+}
+.contactaudio
+{
+	width: 70px;
+	height: 40px;
+}
+.contactfrmaudio
+{
+	width: 70px;
+	height: 40px;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+/*About*/
+.aboutpara
+{
+	padding: 40px;
+}
+.aboutpara h2 
+{
+	text-align: center;
+	font-size: 26px;
+	color: #FF5800;
+}
+.aboutpara p 
+{
+	text-align: center;
+	font-size: 20px;
+	color: #2E1D14 ;
+	padding: 15px;
+}
+.aboutfamily h2
+{
+	text-align: center;
+	color: #FF5800;
+	padding: 20px;
+	font-size: 26px;
+}
+.aboutfamily p 
+{
+	text-align: center;
+	font-size: 20px;
+	color: #2E1D14 ;
+	padding: 15px;
+}
+.family 
+{
+	padding: 40px;
+	width: 80%;
+	border: 2px solid #2E1D14;
+	min-height: 400px;
+	margin-left: 160px;
+	position: relative;
+	background-color: #D8C0B3 ;
+	margin-bottom: 20px;
+}
+.familyimg
+{
+	width: 50%;
+	float: left;
+}
+.familyimg img 
+{
+	opacity: 0.8;
+	width: 500px;
+	height: 300px;
+}
+.familytext
+{
+	width: 50%;
+	float: right;
+	padding: 10px;
+}
+.familytext h3
+{
+	padding: 20px;
+	text-align: left;
+	font-size: 22px;
+	text-decoration: underline 2px #FF5800;
+}
+.familytext p 
+{
+	padding: 20px;
+	text-align: left;
+	font-size: 20px;
+}
+.familytext button
+{
+	padding: 16px;
+	float: right;
+	background-color: #2E1D14;
+	color: #E0DBD5;
+	border: 1px transparent;
+}
+.familytext button:hover
+{
+	color: #FF5800;
+	font-weight: bold;
+}
+.aboutaudio
+{
+	padding: 20px;
+	min-height: 200px;
+	margin-top: 100px;
+	margin-left: 80px;
+}
+.aboutaudio p
+{
+	font-size: 20px;
+	color: #2E1D14;
+	padding: 10px;
+	text-align: left;
+}
+/*Q&A*/
+.question
+{
+	padding: 20px;
+}
+.search	
+{
+	margin-top: 20px;
+	margin-left: 12px;
+	width: 100%;
+	min-height: 100px;
+}
+.search input[type=text]
+{
+	width: 20%;
+	background-color:#FF965E;
+	margin-left: 30px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-weight: bold;
+	background-image: url(images/searchicon.png);
+    background-position: 15px 10px; 
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.search input[type=submit]
+{
+	transition: 0.8s;
+	width: 9%;
+	color: #FEFDF9;
+	background-color: #2E1D14;
+	font-size: 18px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	padding: 12px;
+}
+.search input[type=submit]:hover
+{
+	width: 12%;
+	font-size: 20px;
+	color: #FF5800;
+	font-weight: bold;
+}
+.forum
+{
+	padding: 15px;
+	margin-left: 20px;
+	width: 50%;
+	float: left;
+} 
+.forum h2
+{
+	letter-spacing: 1px;
+	padding: 10px;
+	margin-left: 20px;
+	float: left;
+	font-size: 26px;
+}
+.forumchild 
+{
+	width: 100%;
+	padding: 30px;
+	border: 2px solid #2E1D14;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+.forumchild h3 
+{
+	padding: 10px;
+	color: #FF5800;
+}
+.forumchild p 
+{
+	padding: 10px;
+	font-size: 20px;
+}
+.ask
+{
+	padding: 15px;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 30%;
+	float: right;
+}
+.ask h3 
+{
+	letter-spacing: 1px;
+	font-size: 26px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.ask textarea 
+{
+	width: 100%;
+	background-color:#FF965E ;
+	padding: 20px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.post 
+{
+	padding: 12px;
+	margin-left: 20px;
+	width: 38%;
+	margin-top: 30px;
+	color: #FEFDF9;
+	background-color: #2E1D14;
+	font-size: 18px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+}
+.ask input[type=reset]
+{
+	padding: 12px;
+	margin-left: 40px;
+	width: 38%;
+	margin-top: 30px;
+	color: #FEFDF9;
+	background-color: #2E1D14;
+	font-size: 18px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+}
+.post:hover
+{
+	color: #FF5800;
+	font-weight: bold;
+	padding: 15px;
+}
+.ask input[type="reset"]:hover
+{
+	color: #FF5800;
+	font-weight: bold;
+	padding: 15px;
+}
+.ask img 
+{
+	margin-left: 0px;
+	width: 450px;
+}
+/*Drivers*/
+.driverheading h1
+{
+	font-size: 28px;
+	color: #FF5800;
+	text-align: center;
+	padding: 30px;
+}
+.driverheading p
+{
+	color: #2E1D14;
+	font-size: 20px;
+	text-align: center;
+}
+.grid
+{
+	padding: 20px;
+	margin-left: 130px;
+	margin-top: 20px;
+	height: 1200px;
+}
+.grid h2 
+{
+	font-size: 26px;
+	color: #FF5800;
+	text-align: center;
+	padding: 30px;
+	margin-right: 140px;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+.grid h3 
+{
+	color: #2E1D14 ;
+	font-weight: bold;
+	font-size: 24px;
+}
+.grid1 
+{
+	margin-bottom: 40px;
+}
+.grid2
+{
+	margin-top: 700px;
+}
+.driver
+{
+	width: 28%;
+	float: left;
+	margin-right: 35px;
+	margin-bottom: 80px;
+	margin-top: 20px;
+	padding: 40px;
+	min-height: 400px;
+	background-color: gray;
+	background-position: center center;
+	background-blend-mode: darken;
+	border-radius: 40px;
+}
+.driver:hover 
+{
+	margin-top: 10px ;
+}
+.driver1 
+{
+	background-image: url(images/ElfynEvans.jpg);
+}
+.driver2
+{
+	background-image: url(images/KalleRovanpera.jpg);
+}
+.driver3
+{
+	background-image: url(images/SebastienOgier.jpg);
+}
+.driver4
+{	
+	background-image: url(images/EsapekkaLappi.jpg);
+}
+.driver5
+{
+	background-image: url(images/ScottMartin.jpg);
+}
+.driver6
+{
+	background-image: url(images/JonneHalttunen.jpg);
+}
+.drivertext
+{
+	background-color: rgba(224, 219, 213, 0.8) ;
+	margin-top: 300px;
+	padding: 12px;
+	line-height: 25px;
+	width: 100%;
+}
+.drivertext h3
+{
+	margin-bottom: 8px;
+	color: #2E1D14;
+}
+.drivertext p 
+{
+	color: #2E1D14;
+	font-weight: bold;
+}
+.driversaudio
+{
+	width: 40px;
+	height: 30px;
+	background-color: rgba(224, 219, 213, 0.7);
+	border-radius: 50%;
+}
+/*RegisterOnline*/
+.invitetext
+{
+	padding: 20px;
+}
+.invitetext p 
+{
+	padding: 10px;
+	text-align: center;
+	color: #2E1D14;
+	font-size: 20px;
+}
+.touring
+{
+	padding: 20px;
+	margin-top: 40px;
+}
+.touring h2 
+{
+	font-size: 26px;
+	color: #FF5800;
+	text-align: center;
+}
+.touringaudio
+{
+	background-color: transparent;
+	float: right;
+	width: 45px;
+	height: 40px;
+}
+.tourcountry1
+{
+	width: 45%;
+	padding: 20px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+.touringflag
+{
+	border: 1px solid transparent;
+	border-radius: 50%;
+	width: 150px;
+	min-height: 150px;
+	float: left;
+	margin-top: 90px;
+}
+.tourcountrytxt
+{
+	float: right;
+	width: 70%;
+	background-color: rgba(224, 219, 213, 0.6) ;
+	padding: 20px;
+	margin-right: 10px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.tourcountrytxt h3
+{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.tourcountrytxt p 
+{
+	color: #2E1D14;
+	font-size: 20px;
+	line-height: 28px;
+}
+.tourcountry2
+{
+	width: 45%;
+	padding: 20px;
+	float: right;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+.spain 
+{	
+	background-color: gray;
+	background-image: url(images/rallyspain.jpg);
+	background-blend-mode: darken;
+	height: 400px;
+	background-position: center center;
+}
+.poland
+{	
+	background-color: gray;
+	background-image: url(images/RallyPoland.jpg);
+	background-blend-mode: darken;
+	height: 400px;
+	background-position: center center;
+}
+.norway
+{
+	background-color: gray;
+	background-image: url(images/rallyspain.jpg);
+	background-blend-mode: darken;
+	height: 400px;
+	background-size: 900px 500px;
+	background-position: center center;
+}
+.portugal
+{
+	background-color: gray;
+	background-image: url(images/rallyPortugal.jpg);
+	background-blend-mode: darken;
+	height: 400px;
+	background-size: 950px 500px;
+	background-position: center center;
+}
+.tourcountry3
+{
+	width: 43%;
+	padding: 20px;
+	margin-left: 400px;
+	margin-top: 930px;
+	margin-bottom: 50px;
+}
+.flaggermany
+{
+	border: 1px solid transparent;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-top: 90px;
+}
+.germany 
+{
+	background-color: gray;
+	background-image: url(images/rallygermany.jpg);
+	background-blend-mode: darken;
+	height: 400px;
+	background-size: 950px 500px;
+	background-position: center center;
+}
+.book
+{
+	padding: 20px;
+	margin-top: 40px;
+	min-height: 590px;
+}
+.book h3 
+{
+	font-size: 26px;
+	color: #FF5800;
+	letter-spacing: 1px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.bookform
+{
+	padding: 20px;
+	width: 40%;
+	min-height: 400px;
+	line-height: 30px;	
+	background-color: #E0DBD5;
+	float: left;
+}
+.bookform p
+{
+	text-align: left;
+	color: #FF5800;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.note 
+{
+	font-size: 12px;
+	color: #2E1D14;
+	font-weight: bolder;
+}
+.booksubmit
+{
+	margin-top: 0px;
+	padding: 10px;
+	width: 40%;
+	background-color: #2E1D14;
+	border: 1px solid transparent;
+	font-size: 16px;
+	border-radius: 10px;
+	color: #FEFDF9;
+	text-decoration: none;
+}
+.booksubmit:hover
+{
+	color: #FF5800;
+	font-weight: bold;
+}
+.bookform input[type="text"], input[type="email"]
+{
+	width: 60%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+}
+.bookform select 
+{
+	padding: 10px;
+	width: 60%;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	margin-bottom: 20px;
+}
+.rdotxt
+{
+	padding: 10px;
+	color: #2E1D14;
+	margin-top: 8px;
+}
+.picform
+{
+	padding: 20px;
+}
+.book img
+{
+	float: right;
+	width: 700px;
+	height: 400px;
+	margin-top: 30px;
+}
+.stageheading
+{
+	color: #FF5800;
+	text-align: center;
+	padding: 24px;
+	margin-bottom: 0px;
+	font-size: 26px;
+}
+.stage
+{
+	padding: 20px;
+	margin-top: 10px;
+	min-height: 600px;
+}
+.stagetxt
+{
+	width: 45%;
+	float: right;
+}
+.stage img 
+{
+	width: 700px;
+	height: 400px;
+	margin-top: 80px;
+}
+.stagetxt h3
+{
+	padding: 20px;
+	line-height: 20px;
+	font-size: 22px;
+	color: #2E1D14;
+	text-decoration: underline solid #FF5800;
+}
+.stagetxt p 
+{
+	padding: 20px;
+	font-size: 20px;
+	color: #2E1D14;
+}
+.registerstep
+{
+	min-height: 400px;
+	margin-top: 80px;
+	margin-left: 50px;
+}
+.registerstep h3
+{
+	font-size: 26px;
+	color: #FF5800;
+	padding: 50px;
+	text-align: center;
+}
+.registerchild 
+{
+	width: 33%;
+	float: left;
+}
+.registerchild h4
+{
+	font-size: 22px;
+	color: #2E1D14;
+	text-decoration: underline solid #FF5800;
+	text-align: center;
+}
+.registerchild p 
+{
+	font-size: 20px;
+	color: #2E1D14;
+	padding: 20px;
+	text-align: center;
+	line-height: 22px;
+}
+.registerchild img 
+{
+	width: 100px;
+	height: 100px;
+	margin-left: 190px;
+}
+/*max-width: 1300px;*/
+@media screen and (max-width: 1300px)
+{
+	.columnfull
+	{
+		width: 100%;
+		margin-left: 0;
+		height: 600px;
+	}
+	.intro img, .introtext
+	{
+		margin-left: 0;
+		width: 100%;
+	}
+	.intro img
+	{
+		margin-bottom: 10px;
+	}
+	.rallytour
+	{
+		margin-top: 400px;
+	}
+	/*Contact*/
+	.contact 
+	{
+		height: 400px;
+	}
+	.contactinfo
+	{
+		width: 100%;
+	}
+	.contactimg
+	{
+		width: 100%;
+	}
+	.contactimg img 
+	{
+		width: 90%;
+		height: auto;
+	}
+	.form 
+	{
+		margin-left: 0px;
+	}
+	.forminfo
+	{
+		width: 100%;
+	}
+	/*About*/
+	.family 
+	{
+		padding: 40px;
+		width: 80%;
+		min-height: 650px;
+		margin-left: 130px;
+	}
+	.familyimg
+	{
+		width: 100%;
+	}
+	.familytext
+	{
+		width: 100%;
+		padding: 10px;
+	}
+	/*Drivers*/
+	.grid
+	{
+		margin-left: 10px;
+	}
+	.driver
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	/*RegisterOnline*/
+	.tourcountry1, .tourcountry2
+	{
+		width: 100%;
+		padding: 20px;
+		float: left;
+		margin-left: 0px;
+		margin-top: 40px;
+		min-height: 550px;
+	}
+	.tourcountry3
+	{
+		width: 100%;
+		padding: 20px;
+		float: left;
+		margin-left: 0px;
+		margin-top: 40px;
+		min-height: 550px;
+	}
+	.tourcountrytxt
+	{
+		float: left;
+		padding: 20px;
+		margin-top: 20px;
+	}
+	#popupbooking
+	{
+		width: 50%;
+		height: 450px;
+		left: 25%;
+	}
+	#popupbooking img 
+	{
+		width: 260px;
+		height: 220px;
+		padding: 10px;
+		margin-left: 100px;
+	}
+	#popupbooking input[type="submit"]
+	{
+		margin-left: 80px;
+		width: 60px;
+		height: 50px;
+	}
+	.registerstep
+	{
+		margin-left: 10px;
+		min-height: 500px;
+	}
+	.registerchild 
+	{
+		width: 100%;
+	}
+}
+/*max-width: 768px;*/
+@media screen and (max-width: 768px)
+{ /*Newsletter*/
+	.popupform input[type="submit"], .popupform input[type="text"]
+	{
+		width: 100%;
+	}
+	.footercontent
+	{
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		margin-left: 20px;
+	}
+	/*HomePage*/
+	.columnfull
+	{
+		width: 100%;
+		margin-left: 0;
+		height: 600px;
+		margin-top: 40px;
+	}
+	.intro img, .introtext
+	{
+		margin-left: 0;
+		width: 100%;
+	}
+	.intro img
+	{
+		margin-bottom: 10px;
+	}
+	.introtext
+	{
+		margin-top: 40px;
+		padding: 0;
+	}
+	.flag
+	{
+		width: 100%;
+	}
+	.countries 
+	{
+		padding: 20px;
+		margin-bottom: 850px;
+	}
+	.rallytour
+	{
+		margin-top: 500px;
+	}
+	.homevideo video
+	{
+		width: 100%;
+	}
+	.homevideo p 
+	{
+		width: 100%;
+		margin-top: 0px;
+	}
+	.homevideo h3 
+	{	
+		width: 100%;
+		margin-top: 10px;
+	}
+	
+	/*Contact*/
+	.contact 
+	{
+		height: 400px;
+	}
+	.contactinfo
+	{
+		width: 100%;
+	}
+	.contactimg
+	{
+		width: 100%;
+	}
+	.contactimg img 
+	{
+		width: 90%;
+		height: auto;
+	}
+	.form 
+	{
+		margin-left: 0px;
+	}
+	.forminfo
+	{
+		width: 100%;
+	}
+		/*About*/
+	.family 
+	{
+		padding: 40px;
+		width: 80%;
+		min-height: 870px;
+		margin-left: 50px;
+	}
+	.familyimg
+	{
+		width: 100%;
+	}
+	.familyimg img 
+	{
+		width: 100%;
+	}
+	.familytext
+	{
+		width: 100%;
+		padding: 10px;
+	}
+	/*Drivers*/
+	.grid
+	{
+		margin-left: 10px;
+	}
+	.grid h2 
+	{
+		margin-right: 0px;   
+	}
+	.driver
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	/*RegisterOnline*/
+	.tourcountry1, .tourcountry2
+	{
+		width: 100%;
+		padding: 20px;
+		float: left;
+		margin-left: 0px;
+		margin-top: 40px;
+		min-height: 660px;
+	}
+	.tourcountry3
+	{
+		width: 100%;
+		padding: 20px;
+		float: left;
+		margin-left: 0px;
+		margin-top: 40px;
+		min-height: 660px;
+	}
+	.tourcountrytxt
+	{
+		float: left;
+		padding: 20px;
+		margin-top: 20px;
+	}
+	.bookform
+	{
+		padding: 20px;
+		width: 100%;
+		min-height: 400px;
+		line-height: 30px;	
+		background-color: #E0DBD5;
+		margin-left: 0px;
+	}
+	.book img
+	{
+		float: right;
+		width: 380px;
+		height: 200px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.stagetxt
+	{
+		width: 100%;
+	}
+	.stage img 
+	{
+		width: 400px;
+		height: 200px;
+		margin-top: 10px;
+	}
+	
+	.registerstep
+	{
+		margin-left: 10px;
+		min-height: 500px;
+	}
+	.registerchild 
+	{
+		width: 100%;
+	}
+	.registerchild img 
+	{
+		margin-left: 170px;
+	}
+	/*Q&A*/
+	.forum 
+	{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.ask	
+	{
+		width: 100%;
+	}
+	.search input[type=text]
+	{
+		width: 50%;
+	}
+	.search input[type=submit]
+	{
+		width: 20%;
+	}
+	.search input[type=submit]:hover
+	{
+		width: 28%;
+	}
+	.forum h2 
+	{
+		text-align: center;
+		margin-left: 0px;
+	}
+}

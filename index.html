@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vintage Lane Home Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1><span id="initial">V</span>intage Lane
+			<button class="newsletter" onclick="showPopup()">Newsletter</button>
+		</h1>
+		<div id="overlay" onclick="hidePopup()"></div>
+
+			<div id="popup">
+				<form class="popupform">
+					<p>Sign Up Here!</p>
+					<input type="text" placeholder="Enter Your Email">
+					
+					<input type="Submit" value="Subscribe">
+				</form>
+		    </div>
+	</header>
+
+<script>
+		function showPopup()
+		{
+			document.getElementById('overlay').style.display="block"
+			document.getElementById('popup').style.display="block"
+		}
+		function hidePopup()
+		{
+			document.getElementById('overlay').style.display="none"
+			document.getElementById('popup').style.display="none"
+		}
+
+</script>
+
+<div>
+	<nav>
+		<ul>
+			<li><a href="index.html" class="border">HOME</a></li>
+			<li><a href="contact.html">CONTACT US</a></li>
+			<li><a href="about.html">ABOUT US</a></li>
+			<li><a href="question.html">Q & A</a></li>
+			<li><a href="register.html">REGISTER ONLINE</a></li>
+			<li><a href="drivers.html">OUR DRIVERS</a></li>
+		</ul>
+	</nav>
+
+	<div class="slideshow"></div>
+
+	<div class="motherintro">
+		<div class="intro columnfull">
+			<img class="homeimg" src="images/car2.jpeg" alt="A Vintage Car">
+			<div class="introtext">
+				<h3>Our Vision</h3>
+				<p>Our vision is to support vintage car owners and their dreams. By holding car rallies, we stregthen our unity between the club members and promote the interest of car owners and enthusiasts.
+				</p>
+			</div>
+		</div>
+
+		<div class="intro columnfull">
+			<section class="introtext">
+				<h3>What is Vintage Lane?</h3>
+				<p>"Vintage" is for the "Vintage Cars", "Lane" is for "Rallies" and our club is for the "Vintage Car Rallies". "Vintage Lane" club supports car rallies, especially vintage.
+				</p>
+			</section>
+			<img class="homeimg" src="images/car3.jpeg" alt="Vintage Cars">
+		</div>
+		<a href="images/home.mp3"><img class="homeaudio" src="images/audiobgrmv.png" alt="Audio Image"></a>
+	</div>
+	<!--Countries-->
+	<div class="rallytour">
+		<section class="countriestext">
+			<h2>Rally Tours</h2>
+			<p>We will provide world rally tours, mainly targeting at five countries.</p>
+		</section>
+
+		<div class="countries">
+			<div class="flag">
+					<img src="images/SpainFlage.png" alt="Spain Flag">
+				<div>
+					<p>SPAIN</p>
+				</div>
+			</div>
+
+			<div class="flag">
+					<img src="images/PolandFlag.png" alt="Poland Flag">
+				<div>
+					<p>POLAND</p>
+				</div>
+			</div>
+
+			<div class="flag">
+					<img src="images/NorwayFlag.png" alt="Norway Flag">
+				<div>
+					<p>NORWAY</p>
+				</div>
+			</div>
+
+			<div class="flag">
+					<img src="images/PortugalFlag.png" alt="Portugal Flag">
+				<div>
+					<p>PORTUGAL</p>
+				</div>
+			</div>
+
+			<div class="flag">
+					<img src="images/GermanyFlag.png" alt="Germany Flag">
+				<div>
+					<p>GERMANY</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- <section class="homevideo">
+			<iframe width="420" height="315"
+				src="https://youtu.be/My8tEmdQvuk?si=y_AKjTs9rnBJS11H?autoplay=1&mute=1">
+			</iframe>
+			<h3>This is the video of Car Rallies from the era of 1940s.</h3>
+		</section> -->
+
+	</div>
+
+	<footer>
+		<div class="footercontent">
+			<p>&copy; 2022 Vintage Lane .All Rights Reserved.</p>
+
+			<span id="icon">
+				<a href="https://www.facebook.com/">
+					<img class="iconimg" src="images/fbicon.png" alt="Facebook Icon">
+				</a>
+				<a href="https://www.instagram.com/">
+					<img class="iconimg" src="images/Igicon1-removebg-preview.png" alt="Instagram Icon">
+				</a>
+				<a href="https://twitter.com/login">
+					<img class="twittericon" src="images/twittericon.png" alt="Twitter Icon" >
+				</a>
+			</span>	
+		</div>
+	</footer>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vintage Lane Q & A</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1><span id="initial">V</span>intage Lane</h1>
+	</header>
+
+<div>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="contact.html">CONTACT US</a></li>
+			<li><a href="about.html">ABOUT US</a></li>
+			<li><a href="question.html" class="border">Q & A</a></li>
+			<li><a href="register.html">REGISTER ONLINE</a></li>
+			<li><a href="drivers.html">OUR DRIVERS</a></li>
+		</ul>
+	</nav>
+
+	<div class="question">
+			<div class="search">
+				<input type="text" name="search" placeholder="Search Here...">
+				<input type="submit" name="btnsubmit" value="Search" onclick="mySearch()">
+			</div>
+			<script>
+				function mySearch()
+				{
+					alert("Searching ... ");
+				}
+			</script>
+			<div class="forum">
+		   		 
+		   		 	<h2>FREQUENTLY ASKED QUESTIONS</h2>
+		   		 	<a href="images/FrequentlyAskedQuestions.mp3"><img class="contactaudio" src="images/audiobgrmv.png" alt="Audio Image"></a>
+
+		   		 <div class="forumchild">
+		   		 	<h3>WHAT VEHICLES CAN BE USED FOR COMPETITION?</h3>
+		   		 	<p>Any vehicles as long as they are vintage cars.</p>
+		   		 </div>
+
+		   		 <div class="forumchild">
+		   		 	<h3>WHAT DOES IT COST TO PARTICIPATE THE COMPETITION?</h3>
+		   		 	<p>It is the same price as the event ticket. See <a href="register.html">Here For Details</a></p>
+		   		 </div>
+
+		   		 <div class="forumchild">
+		   		 	<h3>WHERE IS THE EVENT?</h3>
+		   		 	<p>Event Venues differ upon countries. See <a href="register.html">Here For Details</a></p>	   	
+		   		 </div>
+
+		   		 <div class="forumchild">
+		   		 	<h3>HOW DO I BECOME A SPONSER?</h3>
+		   		 	<p>Please contact <a href="mailto:vintagelane@gmail.com">vintagelane@gmail.com</a>.</p>
+		   		  </div>
+		    </div>
+
+		    <div class="ask">
+		    	<h3>ASK QUESTION HERE</h3>
+		    	<textarea>Enter Question</textarea>
+		    	<input class="post" type="submit" name="txtsubmit" value="Post" onclick="myPost()">
+		    	<input type="reset" name="txtreset" value="Cancel" onclick="myCancel()">
+		    	<img src="images/vintagecardraw.png" alt="A Vintage Car">
+		    </div>
+	
+		    <script>
+				function myPost()
+				{
+					alert("Your Question has been successfully posted.");
+				}
+			</script>
+			<script>
+				function myCancel()
+				{
+					alert("Your Question has been successfully cancelled.");
+				}
+			</script>
+
+	</div>
+	
+	<footer>
+		<div class="footercontent">
+			<p>&copy; 2022 Vintage Lane .All Rights Reserved.</p>
+
+			<span id="icon">
+				<a href="https://www.facebook.com/">
+					<img class="iconimg" src="images/fbicon.png" alt="Facebook Icon">
+				</a>
+				<a href="https://www.instagram.com/">
+					<img class="iconimg" src="images/Igicon1-removebg-preview.png" alt="Instagram Icon">
+				</a>
+				<a href="https://twitter.com/login">
+					<img class="twittericon" src="images/twittericon.png" alt="Twitter Icon" >
+				</a>
+			</span>	
+		</div>
+	</footer>
+</div>
+
+
+
+
+</body>
+</html>
